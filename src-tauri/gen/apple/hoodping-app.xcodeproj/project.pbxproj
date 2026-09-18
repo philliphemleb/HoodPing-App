@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03AB87EF279B8629A10C61E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C2709EC9E0B8A43DEC5736 /* QuartzCore.framework */; };
+		1E4E7D35E5F68135BCC353EC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B31D248B0D1F983483D8BD /* WebKit.framework */; };
+		388A45A68C7A3FC2750B924D /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 601A8B0AD5EDC4EECEA5DC45 /* assets */; };
+		50E9F3613B492B66E21830E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1394FF7F3AD9935B7343C4 /* UIKit.framework */; };
+		7200AC06FFDE3273E7A8285B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C905671410D9F36C9E9A5AF /* LaunchScreen.storyboard */; };
+		8656405273F35A0C8575BA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F983F0DEE0C7EF4AD182D6A2 /* Assets.xcassets */; };
+		98174107C938B35D6C17AB00 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6446D5970DCDAACF303E7371 /* Security.framework */; };
+		9D3F17F841FBB46F82B3DA84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3673B08BF22851909376EC /* CoreGraphics.framework */; };
+		A43E8B63378A8C3567B8BFA4 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFA7518E0416B697DDB1829 /* Metal.framework */; };
+		ADCCE1068E80375BC1687011 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 515107055F627168152AB5B7 /* main.mm */; };
+		C8E9980C68FDE4CF3BEF4BBF /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E425D2704ABD655E5F2924DF /* MetalKit.framework */; };
+		D71E8E9377D898E7DCB1272D /* libapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F34AD733E9BAAFBB375AE2F9 /* libapp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19C2709EC9E0B8A43DEC5736 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2C905671410D9F36C9E9A5AF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		437C7224DA20CABB61E9A26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		515107055F627168152AB5B7 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		601A8B0AD5EDC4EECEA5DC45 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		60D20A0FEA0423188B8F08E6 /* hoodping-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hoodping-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6446D5970DCDAACF303E7371 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		66B4A506DDDC6D82088FFBA0 /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		88EE37E9A68068FFD283F4E4 /* lib.rs */ = {isa = PBXFileReference; lastKnownFileType = text; path = lib.rs; sourceTree = "<group>"; };
+		8C1394FF7F3AD9935B7343C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8C3673B08BF22851909376EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8FC84D15FD3DC45575FD40B8 /* main.rs */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.rs; sourceTree = "<group>"; };
+		9CFA7518E0416B697DDB1829 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		A068F59B04413768A4CD34B9 /* hoodping-app_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "hoodping-app_iOS.entitlements"; sourceTree = "<group>"; };
+		D4B31D248B0D1F983483D8BD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		E425D2704ABD655E5F2924DF /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		F34AD733E9BAAFBB375AE2F9 /* libapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp.a; sourceTree = "<group>"; };
+		F983F0DEE0C7EF4AD182D6A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC055942028C57C8ED3D0B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D71E8E9377D898E7DCB1272D /* libapp.a in Frameworks */,
+				9D3F17F841FBB46F82B3DA84 /* CoreGraphics.framework in Frameworks */,
+				A43E8B63378A8C3567B8BFA4 /* Metal.framework in Frameworks */,
+				C8E9980C68FDE4CF3BEF4BBF /* MetalKit.framework in Frameworks */,
+				03AB87EF279B8629A10C61E0 /* QuartzCore.framework in Frameworks */,
+				98174107C938B35D6C17AB00 /* Security.framework in Frameworks */,
+				50E9F3613B492B66E21830E3 /* UIKit.framework in Frameworks */,
+				1E4E7D35E5F68135BCC353EC /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07ADF27377F3E3A418871987 /* hoodping-app */ = {
+			isa = PBXGroup;
+			children = (
+				515107055F627168152AB5B7 /* main.mm */,
+				C4830C2AFAD3BBDD12538487 /* bindings */,
+			);
+			path = "hoodping-app";
+			sourceTree = "<group>";
+		};
+		4D10A064297325A7D4C74BE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C3673B08BF22851909376EC /* CoreGraphics.framework */,
+				F34AD733E9BAAFBB375AE2F9 /* libapp.a */,
+				9CFA7518E0416B697DDB1829 /* Metal.framework */,
+				E425D2704ABD655E5F2924DF /* MetalKit.framework */,
+				19C2709EC9E0B8A43DEC5736 /* QuartzCore.framework */,
+				6446D5970DCDAACF303E7371 /* Security.framework */,
+				8C1394FF7F3AD9935B7343C4 /* UIKit.framework */,
+				D4B31D248B0D1F983483D8BD /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55C58771D66AB46894539140 /* hoodping-app_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A068F59B04413768A4CD34B9 /* hoodping-app_iOS.entitlements */,
+				437C7224DA20CABB61E9A26A /* Info.plist */,
+			);
+			path = "hoodping-app_iOS";
+			sourceTree = "<group>";
+		};
+		9597A6B514CF102C8374346F = {
+			isa = PBXGroup;
+			children = (
+				601A8B0AD5EDC4EECEA5DC45 /* assets */,
+				F983F0DEE0C7EF4AD182D6A2 /* Assets.xcassets */,
+				2C905671410D9F36C9E9A5AF /* LaunchScreen.storyboard */,
+				DB4224FE35EE85244E918F0E /* Externals */,
+				55C58771D66AB46894539140 /* hoodping-app_iOS */,
+				FE34385FAE8D4D960A0F6796 /* Sources */,
+				A1437BE04F7BFC0C9FBE23BB /* src */,
+				4D10A064297325A7D4C74BE1 /* Frameworks */,
+				FCFEB379A0AECCF2CDEB4F5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1437BE04F7BFC0C9FBE23BB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				88EE37E9A68068FFD283F4E4 /* lib.rs */,
+				8FC84D15FD3DC45575FD40B8 /* main.rs */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		C4830C2AFAD3BBDD12538487 /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				66B4A506DDDC6D82088FFBA0 /* bindings.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		DB4224FE35EE85244E918F0E /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		FCFEB379A0AECCF2CDEB4F5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60D20A0FEA0423188B8F08E6 /* hoodping-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE34385FAE8D4D960A0F6796 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				07ADF27377F3E3A418871987 /* hoodping-app */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C676F977FA93D6C0E08136DF /* hoodping-app_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55DBA7436AF8332E494E8680 /* Build configuration list for PBXNativeTarget "hoodping-app_iOS" */;
+			buildPhases = (
+				81C3C8D720A392F5577FAF12 /* Build Rust Code */,
+				8BB7A5C24A64163A27949FCD /* Sources */,
+				678E0D36ECB944DA9E6D7B8B /* Resources */,
+				EC055942028C57C8ED3D0B5B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hoodping-app_iOS";
+			packageProductDependencies = (
+			);
+			productName = "hoodping-app_iOS";
+			productReference = 60D20A0FEA0423188B8F08E6 /* hoodping-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5D294DD5E288A1C4737B397 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 7058DB572C6D35ABDAC86C13 /* Build configuration list for PBXProject "hoodping-app" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9597A6B514CF102C8374346F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FCFEB379A0AECCF2CDEB4F5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C676F977FA93D6C0E08136DF /* hoodping-app_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		678E0D36ECB944DA9E6D7B8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8656405273F35A0C8575BA10 /* Assets.xcassets in Resources */,
+				7200AC06FFDE3273E7A8285B /* LaunchScreen.storyboard in Resources */,
+				388A45A68C7A3FC2750B924D /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81C3C8D720A392F5577FAF12 /* Build Rust Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Externals/x86_64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64/${CONFIGURATION}/libapp.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bun tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BB7A5C24A64163A27949FCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCCE1068E80375BC1687011 /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0AC6DCA5A85AFB39C883C8E1 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "hoodping-app_iOS/hoodping-app_iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = YCCPQ76R3N;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "hoodping-app_iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.philliphemleb.hoodping-app;
+				PRODUCT_NAME = "hoodping-app";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = release;
+		};
+		5D98071BD18DD4D778614A93 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = debug;
+		};
+		7585AFA50CC65F98AB9EE147 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "hoodping-app_iOS/hoodping-app_iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = YCCPQ76R3N;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "hoodping-app_iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.philliphemleb.hoodping-app;
+				PRODUCT_NAME = "hoodping-app";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = debug;
+		};
+		E1D2E88E79DDE5683281E2DD /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55DBA7436AF8332E494E8680 /* Build configuration list for PBXNativeTarget "hoodping-app_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7585AFA50CC65F98AB9EE147 /* debug */,
+				0AC6DCA5A85AFB39C883C8E1 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		7058DB572C6D35ABDAC86C13 /* Build configuration list for PBXProject "hoodping-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D98071BD18DD4D778614A93 /* debug */,
+				E1D2E88E79DDE5683281E2DD /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5D294DD5E288A1C4737B397 /* Project object */;
+}
