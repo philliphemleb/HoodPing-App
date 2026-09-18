@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TileFooter from "./TileFooter.vue";
+import CardFooter from "./CardFooter.vue";
 import type { FeedItem } from "@/types";
 
 defineProps<{ item: FeedItem }>();
@@ -17,7 +17,7 @@ defineProps<{ item: FeedItem }>();
       {{ item.title }}
     </p>
 
-    <TileFooter
+    <CardFooter
       :author-name="item.authorName"
       :distance="item.distance"
       :time-left="item.timeLeft"

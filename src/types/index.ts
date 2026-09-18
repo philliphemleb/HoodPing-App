@@ -1,4 +1,9 @@
-export type TileType = "seeking" | "offering";
+export type CardType = "seeking" | "offering";
+
+export interface PhonePrefix {
+  code: string;
+  label: string;
+}
 
 export type FilterCategory = "all" | "activities" | "events" | "sharing" | "everyday";
 
@@ -9,7 +14,7 @@ export interface Coordinates {
 
 export interface FeedItem {
   id: string;
-  type: TileType;
+  type: CardType;
   category: FilterCategory;
   categoryIcon: string;
   title: string;

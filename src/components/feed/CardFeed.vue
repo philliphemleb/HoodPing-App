@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useFeedStore } from "@/stores/feed";
-import LookingForTile from "./LookingForTile.vue";
-import OfferingTile from "./OfferingTile.vue";
+import LookingForCard from "./LookingForCard.vue";
+import OfferingCard from "./OfferingCard.vue";
 
 const store = useFeedStore();
 </script>
@@ -18,8 +18,8 @@ const store = useFeedStore();
         :key="item.id"
         class="mb-3 break-inside-avoid"
       >
-        <LookingForTile v-if="item.type === 'seeking'" :item="item" />
-        <OfferingTile v-else :item="item" />
+        <LookingForCard v-if="item.type === 'seeking'" :item="item" />
+        <OfferingCard v-else :item="item" />
       </div>
     </div>
   </div>

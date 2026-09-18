@@ -2,14 +2,14 @@
 import { ref, computed, watch, onMounted, onBeforeUnmount } from "vue";
 import { useFeedStore } from "@/stores/feed";
 import { useDragDismiss } from "@/composables/useDragDismiss";
-import type { TileType, FilterCategory } from "@/types";
+import type { CardType, FilterCategory } from "@/types";
 
 const props = defineProps<{ open: boolean }>();
 const emit = defineEmits<{ "update:open": [value: boolean] }>();
 
 const feedStore = useFeedStore();
 
-const mode = ref<TileType>("seeking");
+const mode = ref<CardType>("seeking");
 const title = ref("");
 const category = ref<FilterCategory>("everyday");
 const badge = ref("");

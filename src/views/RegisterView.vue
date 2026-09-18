@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import { useRouter } from "vue-router";
+import type { PhonePrefix } from "@/types";
 
 const router = useRouter();
 
-type PhonePrefix = { code: string; label: string };
 const phonePrefixes: PhonePrefix[] = [
   { code: "+1", label: "US" },
   { code: "+1", label: "CA" },
@@ -23,7 +23,7 @@ const phonePrefix = ref<PhonePrefix["code"]>("+49");
 const phone = ref<string>("");
 const username = ref<string>("");
 const password = ref<string>("");
-const repeatPassword = ref<string>("");z
+const repeatPassword = ref<string>("");
 
 const passwordsMismatch = computed(
   () => repeatPassword.value.length > 0 && password.value !== repeatPassword.value

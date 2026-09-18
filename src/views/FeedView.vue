@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import AppHeader from "@/components/layout/AppHeader.vue";
 import QuickFilterBar from "@/components/layout/QuickFilterBar.vue";
-import MosaicFeed from "@/components/feed/MosaicFeed.vue";
+import CardFeed from "@/components/feed/CardFeed.vue";
 import LocationModal from "@/components/layout/LocationModal.vue";
 </script>
 
@@ -9,7 +9,7 @@ import LocationModal from "@/components/layout/LocationModal.vue";
   <div class="flex min-h-dvh flex-col bg-bg-primary">
     <AppHeader />
     <QuickFilterBar />
-    <MosaicFeed class="mt-4" />
+    <CardFeed class="mt-4" />
     <LocationModal />
   </div>
 </template>
