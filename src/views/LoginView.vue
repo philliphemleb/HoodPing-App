@@ -10,9 +10,9 @@ const email = ref("");
 const password = ref("");
 const error = ref(false);
 
-function handleLogin() {
+async function handleLogin() {
   error.value = false;
-  const success = userStore.login(email.value.trim(), password.value);
+  const success = await userStore.login(email.value.trim(), password.value);
   if (success) {
     router.replace("/");
   } else {

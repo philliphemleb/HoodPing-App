@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import CardFooter from "./CardFooter.vue";
+import CategoryIcon from "@/components/icons/CategoryIcon.vue";
 import type { FeedItem } from "@/types";
 
 defineProps<{ item: FeedItem }>();
@@ -26,7 +27,7 @@ defineProps<{ item: FeedItem }>();
     </div>
 
     <div v-else class="flex items-center justify-between">
-      <span class="text-xl">{{ item.categoryIcon }}</span>
+      <CategoryIcon :category="item.category" class="h-5 w-5 text-text-secondary" />
       <span
         v-if="item.badge"
         class="rounded-full bg-accent-offering/15 px-2 py-0.5 text-xs font-semibold text-accent-offering"

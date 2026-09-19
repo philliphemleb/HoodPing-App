@@ -2,6 +2,7 @@
 import { ref, computed, watch, onMounted, onBeforeUnmount } from "vue";
 import { useFeedStore } from "@/stores/feed";
 import { useDragDismiss } from "@/composables/useDragDismiss";
+import CategoryIcon from "@/components/icons/CategoryIcon.vue";
 import type { CardType, FilterCategory } from "@/types";
 
 const props = defineProps<{ open: boolean }>();
@@ -16,11 +17,11 @@ const badge = ref("");
 const visibleFor = ref("24h");
 const shareWith = ref("neighborhood");
 
-const categories: { value: FilterCategory; label: string; icon: string }[] = [
-  { value: "everyday", label: "Everyday", icon: "📦" },
-  { value: "activities", label: "Activities", icon: "🏀" },
-  { value: "events", label: "Events", icon: "🪩" },
-  { value: "sharing", label: "Sharing", icon: "🔨" },
+const categories: { value: FilterCategory; label: string }[] = [
+  { value: "everyday", label: "Everyday" },
+  { value: "activities", label: "Activities" },
+  { value: "events", label: "Events" },
+  { value: "sharing", label: "Sharing" },
 ];
 
 const timerOptions = [
@@ -59,7 +60,6 @@ function handlePost() {
   feedStore.addItem({
     type: mode.value,
     category: category.value,
-    categoryIcon: categories.find((c) => c.value === category.value)?.icon ?? "📦",
     title: title.value.trim(),
     authorName: "You",
     timeLeft: visibleFor.value,
@@ -210,7 +210,7 @@ onBeforeUnmount(() => {
                 :aria-pressed="category === cat.value"
                 @click="category = cat.value"
               >
-                <span>{{ cat.icon }}</span>
+                <CategoryIcon :category="cat.value" class="h-4 w-4" />
                 <span>{{ cat.label }}</span>
               </button>
             </div>
@@ -235,7 +235,7 @@ onBeforeUnmount(() => {
                 <input
                   v-model="badge"
                   type="text"
-                  placeholder="💰 Price or counter-value"
+                  placeholder="Price or counter-value"
                   class="w-full rounded-xl bg-bg-elevated px-4 py-3 text-sm text-text-primary placeholder-text-secondary/50 outline-none"
                 >
               </div>

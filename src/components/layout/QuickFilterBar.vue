@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import { useFeedStore } from "@/stores/feed";
+import CategoryIcon from "@/components/icons/CategoryIcon.vue";
 import type { FilterCategory } from "@/types";
 
 const store = useFeedStore();
 
 const filters: { label: string; value: FilterCategory }[] = [
   { label: "All", value: "all" },
-  { label: "Activities 🏀", value: "activities" },
-  { label: "Events 🥳", value: "events" },
-  { label: "Sharing 🔨", value: "sharing" },
-  { label: "Everyday 📦", value: "everyday" },
+  { label: "Activities", value: "activities" },
+  { label: "Events", value: "events" },
+  { label: "Sharing", value: "sharing" },
+  { label: "Everyday", value: "everyday" },
 ];
 </script>
 
@@ -27,7 +28,10 @@ const filters: { label: string; value: FilterCategory }[] = [
       :aria-pressed="store.activeFilter === filter.value"
       @click="store.setFilter(filter.value)"
     >
-      {{ filter.label }}
+      <span class="flex items-center gap-1.5">
+        <CategoryIcon :category="filter.value" class="h-4 w-4" />
+        {{ filter.label }}
+      </span>
     </button>
   </div>
 </template>

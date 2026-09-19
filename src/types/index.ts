@@ -16,7 +16,6 @@ export interface FeedItem {
   id: string;
   type: CardType;
   category: FilterCategory;
-  categoryIcon: string;
   title: string;
   authorName: string;
   distance: string;

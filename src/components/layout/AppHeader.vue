@@ -66,8 +66,11 @@ onBeforeUnmount(() => {
       </button>
 
       <button ref="avatarRef" class="relative h-8 w-8" aria-label="Open menu" @click="toggleMenu">
-        <div class="flex h-8 w-8 items-center justify-center rounded-full bg-bg-elevated text-sm">
-          👤
+        <div class="flex h-8 w-8 items-center justify-center rounded-full bg-bg-elevated">
+          <svg class="h-4 w-4 text-text-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
         </div>
         <span v-if="userStore.karma > 0" class="absolute -bottom-1 -right-1.5 rounded-full bg-accent-seeking px-1.5 py-0.5 text-[9px] font-semibold leading-none text-white">
           +{{ userStore.karma }}
