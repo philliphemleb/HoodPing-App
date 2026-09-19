@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "dev:staging": "VITE_API_URL=https://stage-api.hoodping.example vite --mode staging",
+    "build": "vue-tsc --noEmit && vite build --mode development",
+    "build:staging": "vue-tsc --noEmit && VITE_API_URL=https://stage-api.hoodping.example vite build --mode staging",
+    "build:production": "vue-tsc --noEmit && VITE_API_URL=https://api.hoodping.example vite build --mode production",
     "preview": "vite preview",
     "tauri": "tauri"
   },

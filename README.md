@@ -20,23 +20,32 @@ Built with Vue 3 + TypeScript + Tauri.
 
 ```bash
 bun install
-cp .env.example .env   # then fill in VITE_MAPTILER_API_KEY
-bun run dev            # Vite dev server, default port 1420
+cp .env.example .env   # then fill in VITE_MAPTILER_API_KEY + VITE_API_URL
+bun run dev            # local Docker backend, default port 1420
 ```
 
-Other scripts:
+Per-environment builds (the backend URL is baked in at build time):
 
 ```bash
-bun run build    # vue-tsc --noEmit && vite build
-bun run preview  # preview the production build
-bun run tauri    # Tauri CLI
+bun run dev               # .env            -> local Docker
+bun run build             # .env            -> local Docker
+bun run dev:staging       # .env.staging    -> stage backend
+bun run build:staging     # .env.staging    -> stage backend
+bun run build:production  # .env.production -> prod backend
+bun run preview           # preview the production build
+bun run tauri             # Tauri CLI (uses bun run build, i.e. local Docker)
 ```
+
+Two gotchas, both verified: `VITE_API_URL` is baked in at build time, and Bun preloads `.env` into `process.env` — real environment always beats Vite's mode files. So the stage/prod scripts pass the URL inline (inline env wins over everything), and there is intentionally no `.env.development` (Bun would preload it into every mode and shadow the other URLs).
+
+For stage/prod mobile binaries, run the matching `build:*` script before `tauri build`.
 
 ## Environment variables
 
 | Variable | Required | Description |
 |---|---|---|
 | `VITE_MAPTILER_API_KEY` | Yes | MapTiler key used for map tiles and reverse geocoding in `src/stores/location.ts` |
+| `VITE_API_URL` | No | Symfony backend base URL (no trailing slash). Empty = local test login. Set per environment via `.env.development` / `.env.staging` / `.env.production`. |
 
 Without a key the app falls back to `"My Location (Offline)"`.
 
